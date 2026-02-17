@@ -18,9 +18,6 @@ if (strlen($name) > 0 && strlen($message) > 0 && strlen($mail) > 0) {
 		<strong>Email : </strong> '. $mail .'<br><br>
 		<strong>Message : </strong> '. $message .'<br><br>';
 		
-		if(isset($_POST['message'])) {
-			$mailmsg .= '<strong>Message : </strong> '. $_POST['message'] .'<br><br>';
-		}
         $headers   = array();
         $headers[] = "MIME-Version: 1.0";
         $headers[] = "Content-Type: text/html; charset=utf-8";
